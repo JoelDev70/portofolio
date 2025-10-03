@@ -1,0 +1,506 @@
+*{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: monospace;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: #f5f5f5;
+ } 
+ body{
+    min-height: 300vh; 
+    background: linear-gradient(135deg, #0a0f30, #000428);
+ }
+ 
+.header { 
+    margin: 0px;
+}
+.container{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 10px;
+    width: 100%;
+    padding: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: top 0.6s ease;
+}
+.container{
+        backdrop-filter: blur(5px);
+}
+.logo{
+    font-size: 40px;
+}
+.logo a{
+    color: rgb(209, 99, 48);
+    text-decoration: none;
+}
+.navBar ul{
+    border: 0.5px solid rgb(121, 119, 119);
+    display:flex;
+    padding: 5px;
+    border-radius: 10px;
+    list-style-type: none;
+}
+.navBar a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0px 15px;
+} 
+.navBar ul a:hover{
+    text-decoration: line-through;
+}
+
+#home{
+    margin: 40px 0;
+    justify-content: center;
+    display: flex;
+}
+.description{
+    text-align: center;
+    max-width: 450px;
+    background: none;
+    top: 50%;
+    position: absolute;
+}
+.description h2,a{
+    background: none;
+    text-decoration: none;
+}
+.description h2{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.description a{
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.picture img{
+    width: 800px; 
+}
+.stats  ul{
+    display: flex;
+    justify-content: center;
+    margin: 7% 0;
+}
+.stats .experience{
+    background: linear-gradient(135deg, #1a2150, #000428);
+    justify-items: center;
+    display: flex;
+    gap: 25px;
+    /* width: 350px; */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px rgb(240, 236, 236) inset;
+}
+.li1{
+    margin: 30px;
+}
+    
+.li1 :hover{
+    transform: translateY(10px);
+    transition-duration: 2s;
+}
+
+.stats .iconyears {
+    justify-items: center;
+    width: 80px;
+    padding: 10px;
+}
+.stats .iconyears img{
+    width: 50px;
+    background: burlywood;
+    border-radius: 50%;
+    padding: 7px;
+}
+.stats .yearsTitle{
+    line-height: 1.2;
+    text-align: center;
+    font-size: 40px;
+
+}
+.stats .yearsTitle strong{
+    display: block;
+  font-size: initial;
+  line-height: 1.3;
+  margin-top: 5px;
+}
+#about{
+    margin: 30px 0;
+}
+.aboutM{
+    padding: 65px;
+    display: flex;
+    justify-content: space-around;
+}
+.photoDev{
+    text-align: center;
+    
+}
+.photoDev img{
+    width: 430px;
+    z-index: -1;
+}
+.photoDev .text{
+    position: absolute;
+    margin-top: 250px;
+    font-size: 22px;
+    color: #304c80;
+    font-weight: bold;
+}
+.invitation{
+    width: 40%;
+}
+.invitation h2{
+    padding: 25px;
+    border-left: 4px solid white;
+    font-size: 25px;
+    color: rgb(221, 218, 218);
+}
+.aboutMe{
+    font-size: 16px;
+    padding: 15px;
+    color: darkgray;
+}
+#skills{
+}
+.skill{
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    margin: 100px 0;
+    justify-content: space-around;
+}
+.skillsProgram h2{
+    margin: 10px;
+    font-size: 30px;
+    padding: 30px;
+    border-left: 2px solid white;
+}
+.aboutSchool{
+    font-size: 18px;
+    padding: 30px;
+    color:darkgray;
+}
+
+#tagcanvas{
+    width: 400px;
+    height: auto;
+    margin: 0px;
+    margin-bottom: 0;
+    background: #0a1033;
+    border-radius: 50%;
+}
+
+.contacts{
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+}
+.contact .title h2{
+    font-size: 20px; 
+}
+
+.contact h3{
+    font-size: 17px;
+}
+.contact a:hover{
+    color: rgb(12, 12, 245);
+    transform:translateY(10);
+    transition-duration: 1s;
+}
+
+.contact .title{
+    border-left: 2px solid white;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.contact p,a{
+    padding: 10px;
+    color: darkgray;
+    font-size: 16px;
+}
+.reseau ul{
+   bottom: 0;
+   left: 0;
+   padding: 0;
+    position: fixed;
+    display: block;
+    margin: 120px 110px;
+    border-radius: 5px;
+    list-style-type: none;
+
+}
+.reseau ul h3{
+    position: absolute;
+    margin: 0;
+    justify-content: center;
+    visibility: hidden;
+}
+ h3:hover{
+    visibility: visible;
+}
+.reseau img{
+    margin: 5px ;
+    width: 30px;
+    height: 30px;
+    background: cornflowerblue;
+    border-radius: 50%;
+}
+
+.formulaire{
+    box-shadow: 1px 1px 2px 1px rgb(42, 58, 92) inset;
+    border-radius: 15px;
+    width: 30%;
+    padding: 12px;
+}
+.formulaire #form{
+    width:auto;
+    display:grid;
+    padding: 10px;
+    font-size: 15px;
+}
+.formulaire #form input,textarea{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    margin: 15px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    background: #1a2150;
+}
+.formulaire textarea{
+    height: 110px;
+}
+.formulaire #form #envoie{
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    background: rgb(190, 196, 201);
+    color: #1a2150;
+}
+
+.logoContainer a{
+    font-size: 30px;
+    margin-left: 100px;
+}
+.right p{
+    font-size: 15px;
+    margin-right: 100px;
+    padding: 15px;
+}
+
+.footer{
+    justify-content: space-between;
+    /* justify-items: center; */
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    background:  #304c80;
+}
+
+
+
+ .bubble-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: rise 10s infinite ease-in;
+}
+
+.bubble:nth-child(2) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-duration: 12s;
+}
+
+.bubble:nth-child(3) {
+  left: 40%;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(4) {
+  left: 60%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 14s;
+}
+
+.bubble:nth-child(5) {
+  left: 80%;
+  animation-duration: 11s;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+100%{
+    transform: translateY(-120vh) scale(1.5);
+    opacity: 0;
+  }
+}
+h2{
+    animation-name: monAnim;
+    animation-direction: reverse;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes monAnim{
+    50%{
+        color: rgb(48, 70, 129);
+    }
+}
+@media screen and (max-width : 768px){
+  *{
+    width: 100%;
+    overflow-x:hidden;
+    justify-content: center;
+   
+} 
+  .container{
+    display:block;
+    width: 100%;
+    max-width:100%;
+    padding:0;
+}
+ .btn{
+    display:none;
+}
+#home{
+display: block;
+position: relative;
+height: 100vh;
+} 
+
+#home .description{
+    width: 100%;   
+}
+.picture img{
+    width: 100%;
+    max-width: 100%;
+}
+.stats ul{
+    flex-wrap: wrap;
+}
+.li1{
+    display: flex;
+    margin: 2rem;
+    width: 100%;
+}
+.invitation {
+    display: block;
+   width: 100%;
+   margin-top: -60px;
+   padding: 0; 
+}
+#aboutM{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.invitation .projet{
+    border: none;
+    position: relative;
+    font-size: 23px;
+}
+.invitation h2, .skill h2, .contact h2{
+    position: absolute;
+}
+
+.invitation p{
+    margin-top: 7rem;
+    padding: 0;
+}
+ .invitation h2{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.photoDev{
+    display: none;
+}
+
+.skill{
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    margin-top: -50px;
+}
+.skill .title{
+    border: none;
+    position: relative;
+    font-size: 23px;
+}
+.aboutSchool{
+    display: none;
+}
+ #tagcanvas{
+    width: 90%;
+    height: 90%;
+    margin: 1.5rem;
+    justify-content: center;
+} 
+.contact .title{
+    border: none;
+    position: relative;
+    font-size: 23px;
+}
+.contacts{
+    display: block;
+}
+.contact{
+    margin: 30px;
+}
+ 
+
+.formulaire{
+    width: 100%;
+    justify-content: center;
+}
+
+.reseau  ul{
+    position: fixed;
+    margin: 0;
+    margin-bottom:110px ;
+}
+.footer{
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    text-align: center;
+    } 
+.footer .logoContainer{
+  display: none;
+}
+.footer .rigth{
+    text-align: center;
+}
+}
