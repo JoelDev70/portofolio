@@ -40,18 +40,26 @@ setTimeout(type,delay);
 
 
 //data sharing 
-  document.getElementById("form").addEventListener("submit",function(e){
-    e.preventDefault();
-  
+document.getElementById("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
   const message = document.getElementById("message").value;
-  const text = encodeURIComponent('Nom: name, Email: {email},Telephone: phone,Message:{message}');
-  const phoneNumber = "243972173663";
-const whatsappURL = `https://wa.me/phoneNumber?text={text}`;
-  alert("Votre message est prêt à être envoyé sur Whatsapp");
-window.open(whatsappURL,"_blank");
+
+  const texte = `%0ANew contact from your portfolio%0A
+        Nom : ${name}%0A
+        Email : ${email}%0A
+        Téléphone : ${phone}%0A
+        Message : ${message}`;
+  const numeroWhatsApp = "243972173663";
+
+    // Lien vers WhatsApp
+  const whatsappURL = `https://wa.me/${numeroWhatsApp}?text=${texte}`;
+  alert("Votre message est prêt à être envoyé sur WhatsApp !");
+  window.open(whatsappURL, "_blank");
+  document.getElementById("form").reset();
 });
 
 //scroll for manage the navigattion
